@@ -1,0 +1,111 @@
+:root{
+
+    --color-off-black: hsl(0, 0%, 8%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-green:  hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+ 
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-off-black) ;
+    font-size: 14px;
+    font-family: 'Inter';
+  }
+  body:last-child{
+    align-self: flex-end;
+  }
+  main {
+    
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 375px;
+    margin: 6em 0 6em 0;
+    background-color: var(--color-dark-grey);
+    border-radius: 16px;
+    gap: 1.4em;
+  }
+  
+  #about-part{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+    margin-top: 2.5em;
+  }
+  #photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    border-radius: 50%;
+    width: calc(176px/2);
+  }
+  #about-part div:nth-child(2){
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+  }
+  #name{
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.7em;
+  }
+  #location{
+    color: var(--color-green);
+    font-weight: 600;
+  }
+  #bio{
+    font-weight: 400;
+    color: var(--color-white);
+  }
+  #social-link-part{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+   gap: 1em;
+    margin-bottom: 2.5em;
+  }
+  #social-link{
+    width: 100%;
+    height: 4em;
+    border-radius: 10px;
+    font-weight:  600;
+    color: var(--color-white);
+    background-color: var(--color-grey);
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  #social-link:hover {
+    color: var(--color-off-black);
+    background-color: var(--color-green);
+  }
+    
