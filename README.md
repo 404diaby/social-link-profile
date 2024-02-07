@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github - repository](https://github.com/404diaby/blog-preview-card)
-- Live Site URL: [Vercel - hosting](https://blog-preview-card-beta-nine.vercel.app/)
+- Solution URL: [Github - repository](https://github.com/404diaby/social-link-profile)
+- Live Site URL: [Vercel - hosting](https://social-link-profile-roan.vercel.app/)
 
 ## My process
 
