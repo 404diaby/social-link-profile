@@ -15,8 +15,9 @@
 }
 
 
-
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-off-black) ;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Inter';
   }
   body:last-child{
@@ -68,7 +69,7 @@
     border-radius: 50%;
     width: calc(176px/2);
   }
-  #about-part div:nth-child(2){
+  #about-part div.text{
     display: inherit;
     flex-direction: inherit;
     align-items: inherit;
@@ -83,7 +84,6 @@
     font-weight: 600;
   }
   #bio{
-    font-weight: 400;
     color: var(--color-white);
   }
   #social-link-part{
@@ -93,7 +93,7 @@
    gap: 1em;
     margin-bottom: 2.5em;
   }
-  #social-link{
+  .social-link{
     width: 100%;
     height: 4em;
     border-radius: 10px;
@@ -103,9 +103,15 @@
     border: none;
     cursor: pointer;
     font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  #social-link:hover {
+  .social-link:hover {
     color: var(--color-off-black);
     background-color: var(--color-green);
   }
     
+  .attribution { font-size: 11px; text-align: center;  color:var(--color-white)}
+  .attribution a { color: rgb(255, 123, 0) }

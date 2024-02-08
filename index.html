@@ -8,30 +8,25 @@
   <link rel="stylesheet" href="/assets/style/style.css">
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center;  color:var(--color-white)}
-    .attribution a { color: rgb(255, 123, 0) }
-  </style>
 </head>
 <body>
   <main>
     <section id="about-part">
-      <div id="photo"><img src="./assets/images/avatar-jessica.jpeg"></div>
-      <div>
-         <span id="name"> Jessica Randall</span>
-        <span id="location"> London, United Kingdom</span>
+      <div id="photo"><img src="./assets/images/avatar-jessica.jpeg" alt="of Jessica Randall"></div>
+      <div class="text">
+         <h1 id="name"> Jessica Randall</h1>
+        <p id="location"> London, United Kingdom</p>
       </div>
 
      
-      <span id="bio"> "Front-end developer and avid reader."</span>
+      <p id="bio"> "Front-end developer and avid reader."</p>
     </section>
     <section id="social-link-part">
-      <button id="social-link" type="button" onclick="goTo(this.innerText)"> GitHub</button>
-      <button id="social-link" type="button" onclick="goTo(this.innerText)"> Frontend Mentor</button>
-      <button id="social-link" type="button" onclick="goTo(this.innerText)">LinkedIn</button>
-      <button id="social-link" type="button" onclick="goTo(this.innerText)">Twitter</button>
-      <button id="social-link" type="button" onclick="goTo(this.innerText)">Instagram</button>
+      <a class="social-link" href="https://github.com/" > GitHub</a>
+      <a class="social-link" href="https://www.frontendmentor.io" > Frontend Mentor</a>
+      <a class="social-link" href="https://www.instagram.com/" >LinkedIn</a>
+      <a class="social-link" href="https://twitter.com/" >Twitter</a>
+      <a class="social-link" href="https://www.instagram.com/" >Instagram</a>
     </section>
   </main>
 
@@ -40,21 +35,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/404diaby">404diaby</a>.
   </div>
-  <script>
  
-    function goTo(social){
-      const social_link = {
-      "GitHub" : "https://github.com/",
-      "Frontend Mentor" : "https://www.frontendmentor.io",
-      "LinkedIn" : "https://www.instagram.com/",
-      "Twitter" : "https://twitter.com/",
-      "Instagram" : "https://www.instagram.com/"
-    }
-    window.location.href = social_link[social]
-    }
-
-
-
-  </script>
 </body>
 </html>
